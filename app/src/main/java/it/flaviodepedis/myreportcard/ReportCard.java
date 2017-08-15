@@ -10,6 +10,9 @@ package it.flaviodepedis.myreportcard;
  */
 public class ReportCard {
 
+    /** Constant variable to validate grade variable if are negative number before to assign */
+    private static final int VERIFY_NEGATIVE = 0;
+
     /** Variable to define Robotic grade for the report */
     private int mRoboticGrade;
 
@@ -101,42 +104,78 @@ public class ReportCard {
      * Set the grade for Robotics matter of the ReportCard
      */
     public void setRoboticsGrade(int roboticGrade) {
-        mRoboticGrade = roboticGrade;
+        // Validate the parameter before assigning them
+        if (roboticGrade < VERIFY_NEGATIVE){
+            mRoboticGrade = VERIFY_NEGATIVE;
+        }
+        else {
+            mRoboticGrade = roboticGrade;
+        }
     }
 
     /**
      * Set the grade for Android matter of the ReportCard
      */
     public void setAndroidGrade(int androidGrade) {
-        mAndroidGrade = androidGrade;
+        // Validate the parameter before assigning them
+        if (androidGrade < VERIFY_NEGATIVE){
+            mAndroidGrade = VERIFY_NEGATIVE;
+        }
+        else {
+            mAndroidGrade = androidGrade;
+        }
     }
 
     /**
      * Set the grade for Artificial Intelligence matter of the ReportCard
      */
     public void setArtificialIntelligenceGrade(int artificialIntelligenceGrade) {
-        mArtificialIntelligenceGrade = artificialIntelligenceGrade;
+        // Validate the parameter before assigning them
+        if (artificialIntelligenceGrade < VERIFY_NEGATIVE){
+            mArtificialIntelligenceGrade = VERIFY_NEGATIVE;
+        }
+        else {
+            mArtificialIntelligenceGrade = artificialIntelligenceGrade;
+        }
     }
 
     /**
      * Set the grade for Digital Marketing matter of the ReportCard
      */
     public void setDigitalMarketingGrade(int digitalMarketingGrade) {
-        mDigitalMarketingGrade = digitalMarketingGrade;
+        // Validate the parameter before assigning them
+        if (digitalMarketingGrade < VERIFY_NEGATIVE){
+            mDigitalMarketingGrade = VERIFY_NEGATIVE;
+        }
+        else {
+            mDigitalMarketingGrade = digitalMarketingGrade;
+        }
     }
 
     /**
      * Set the grade for Machine Learning matter of the ReportCard
      */
     public void setMachineLearningGrade(int machineLearningGrade) {
-        mMachineLearningGrade = machineLearningGrade;
+        // Validate the parameter before assigning them
+        if (machineLearningGrade < VERIFY_NEGATIVE){
+            mMachineLearningGrade = VERIFY_NEGATIVE;
+        }
+        else {
+            mMachineLearningGrade = machineLearningGrade;
+        }
     }
 
     /**
      * Set the grade for Data Analyst matter of the ReportCard
      */
     public void setDataAnalystGrade(int dataAnalystGrade) {
-        mDataAnalystGrade = dataAnalystGrade;
+        // Validate the parameter before assigning them
+        if (dataAnalystGrade < VERIFY_NEGATIVE){
+            mDataAnalystGrade = VERIFY_NEGATIVE;
+        }
+        else {
+            mDataAnalystGrade = dataAnalystGrade;
+        }
     }
 
     /**
